@@ -1,0 +1,160 @@
+@media only screen and (max-width: 1366px){
+	.container,.banner-container{
+	max-width:1200px;
+	}
+	body{
+		font-size:15.17px;
+	}
+	.section-title p {
+    margin-top: 28px;
+}
+h2{
+	font-size:36px;
+	line-height: 44px;
+
+}
+	/*header*/
+	form.headerSearchform{
+		width:381px;
+		margin:0px 45px 0px 41px;
+	}
+	.header-container form.headerSearchform input{
+		width:80%;
+	}
+	.header-container .navbar-light .navbar-nav .nav-link{
+		padding:0px 60px;
+	}
+	.btn.btn-green{
+		padding:7.5px 18px;
+	}
+	.header-container form.headerSearchform input{
+		font-size:17px;
+	}
+	.header-container {
+    max-width: 1200px;
+   
+   }
+   /*welcome-banner*/
+   .welcome-banner{
+   	    width: 777px;
+   }
+   .welcome-banner p{
+   	font-size:17px;
+   }
+   .welcome-banner h1{
+   	font-size:43px;
+   }
+
+   .GridWorklist {
+    margin-top: 73px;
+}
+   /*DivFluenceGridWork*/
+   .DivFluenceGridWork {
+    padding: 74px 0px 92px 0px;
+}
+.DivFluenceGridWork .grid-content {
+    margin-top: 35px;
+}
+   
+/*DivAdvancedSearchSolution*/
+.DivEmailfinder {
+    margin-top: 116px;
+}
+.DivAdvancedSearchSolution {
+    margin-bottom: 123px;
+}
+/*DivTikTokUserSearch*/
+.DivTikTokUserSearch {
+    padding-bottom: 123px;
+ 
+}
+/**/
+.emailfindertext p{
+	font-size: 17px;
+	line-height: 24px;
+}
+/*DivTikinNiche*/
+.DivTikinNiche{
+	padding-top:130px;
+}
+.DivTikinNiche .UsernameInput{
+	margin-left:0px;
+}
+.DivTikTokUserSearch .UsernameInput{left:12px;}
+.DivTikTokUserSearch::before{height:169px;
+}
+.DivTikTokUserSearch input, .DivTikinNiche input{
+	width:387px;
+}
+.DivTKtokAnalyticgridBox{
+	padding: 0px 0px 80px 0px;
+}
+
+}
+
+@media only screen and (max-width:1200px){
+	/*header*/
+	.header-container {
+    max-width: 1140px;
+  }
+  .container, .banner-container {
+    max-width: 1140px;
+}
+.header-container .navbar-light .navbar-nav .nav-link{
+	padding:0px 40px;
+}
+/*DivinfluencersLocation*/
+	.location-map::after {
+   
+    width: 767px;
+    height: 450px;
+    right:-9px;
+}
+}
+
+@media only screen and (max-width:991px){
+
+}
+
+@media only screen and (max-width:767px){
+
+}
+
+@media only screen and (max-width:567px){
+.header-container {
+    max-width: 100%;
+    padding: 0px 15px;
+}
+.welcome-banner {
+    width:340px;
+}
+.container, .banner-container {
+    max-width: 100%;
+    padding: 0px 15px;
+}
+.welcome-banner h1 {
+    font-size: 26px;
+    line-height: 32px;
+}
+.welcome-banner p {
+    font-size: 16px;
+    font-weight: normal;
+}
+.welcome-banner .btn {
+    margin: 30px auto;
+    padding: 16px 20px;
+}
+.mid-search form.headerSearchform .form-control {
+    display: inline-block;
+    width: 84%;
+}
+.mid-search{
+	margin-left:0px;
+	width:100%;
+}
+.Divbanner::after{
+	top: 415px;
+	width:100%;
+	background-size: contain;
+}
+}
