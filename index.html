@@ -1,563 +1,571 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Influence Grid</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
- <link href="css/custom.css" rel="stylesheet" type="text/css">
+  <link href="css/custom.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" type="text/css" href="css/slick.css">
-   <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
 </head>
+
 <body>
 
-<!--header start-->
-    <div class="header-container">
-      <header>
-        
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#">
-            <img src="images/logo.svg" alt="logo">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <!--header start-->
+  <header>
+    <div class="header-container container">
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.svg" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="form-inline my-2 my-lg-0 headerSearchform">
-              <button class="btn my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
-              <input class="form-control mr-sm-2" type="search" placeholder="Search for TikTok influencers">
-              
-            </form>
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">FAQs <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Log In</a>
-              </li>
-              
-            </ul>
-            <button class="btn btn-green">Start Discovering</button>
-          </div>
-        </nav>
-      
-      </header>
-     </div>
-    <!--header end-->
-    <!--welcomebanner start-->
-    <section class="Divbanner">
-      <div class="banner-container">
-          <div class="welcome-banner">
-          
-          <h1>Discover Tiktok Influencers With The Leading Tiktok Search Engine</h1>
-          <p>Find the perfect Tiktok influencers that are right for your budget and campaign using our database of over 125,000 influencers</p>
-          
-          <button class="btn btn-green">Start Your Free Trial</button>
-         
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <form class="form-inline my-2 my-lg-0 headerSearchform">
+            <button class="btn my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+            <input class="form-control mr-sm-2" type="search" placeholder="Search for TikTok influencers">
+
+          </form>
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">FAQs <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Log In</a>
+            </li>
+
+          </ul>
+          <button class="btn btn-green">Start Discovering</button>
         </div>
-        <div class="mid-search">
-            <form class="form-inline headerSearchform">
-              <button class="btn" type="submit"><i class="fa fa-search"></i></button>
-              <input class="form-control" type="search" placeholder="Search for TikTok influencers">
-            </form>
-          </div>
+      </nav>
+
+    </div>
+  </header>
+  <!--header end-->
+  <!--welcomebanner start-->
+  <section class="Divbanner">
+    <div class="banner-container container">
+      <div class="welcome-banner">
+
+        <h1>Discover Tiktok Influencers With The Leading Tiktok Search Engine</h1>
+        <p>Find the perfect Tiktok influencers that are right for your budget and campaign using our database of over
+          125,000 influencers</p>
+
+        <button class="btn btn-green">Start Your Free Trial</button>
+
       </div>
-     </section>
-    <!--welcomebanner end-->
+      <div class="mid-search">
+        <form class="form-inline headerSearchform">
+          <button class="btn" type="submit"><i class="fa fa-search"></i></button>
+          <input class="form-control" type="search" placeholder="Search for TikTok influencers">
+        </form>
+      </div>
+    </div>
+  </section>
+  <!--welcomebanner end-->
   <section class="DivTiktokInfluenceTable">
-     <div class="container">
+    <div class="container">
       <div class="table-responsive">
         <table id="example" class="table nowrap" style="width:100%">
           <thead>
-              <tr>
-                  <th>Name</th>
-                  <th>Country</th>
-                  <th>Followers</th>
-                  <th>Views/Vid</th>
-                  <th>Likes/Vid</th>
-                  <th>Engagement</th>
-              </tr>
+            <tr>
+              <th>Name</th>
+              <th>Country</th>
+              <th>Followers</th>
+              <th>Views/Vid</th>
+              <th>Likes/Vid</th>
+              <th>Engagement</th>
+            </tr>
           </thead>
           <tbody>
-             
-              <tr>
-                  <td class="d-flex table-namedetails">
-                      <div class="img-thumb-circle">
-                          <img src="images/Ellipse1.png" alt="img">
-                      </div>
-                      <div>
-                      <span class="username">@username</span>
-                      <span class="profileDes">Profile description</span>
-                     </div>
-                  </td>
-                  <td>USA</td>
-                  <td>62.6m</td>
-                  <td>18.5m</td>
-                  <td>3.3m</td>
-                 <td>19.7%</td>
-              </tr>
-             <tr>
-                  <td class="d-flex table-namedetails">
-                      <div class="img-thumb-circle">
-                          <img src="images/Ellipse1.png" alt="img">
-                      </div>
-                      <div>
-                      <span class="username">@username</span>
-                      <span class="profileDes">Profile description</span>
-                     </div>
-                  </td>
-                  <td>USA</td>
-                  <td>62.6m</td>
-                  <td>18.5m</td>
-                  <td>3.3m</td>
-                 <td>19.7%</td>
-              </tr>
-               <tr>
-                 <td class="d-flex table-namedetails">
-                      <div class="img-thumb-circle">
-                          <img src="images/Ellipse1.png" alt="img">
-                      </div>
-                      <div>
-                      <span class="username">@username</span>
-                      <span class="profileDes">Profile description</span>
-                     </div>
-                  </td>
-                  <td>USA</td>
-                  <td>62.6m</td>
-                  <td>18.5m</td>
-                  <td>3.3m</td>
-                 <td>19.7%</td>
-              </tr>
-              <tr>
-                 <td class="d-flex table-namedetails">
-                      <div class="img-thumb-circle">
-                          <img src="images/Ellipse1.png" alt="img">
-                      </div>
-                      <div>
-                      <span class="username">@username</span>
-                      <span class="profileDes">Profile description</span>
-                     </div>
-                  </td>
-                  <td>USA</td>
-                  <td>62.6m</td>
-                  <td>18.5m</td>
-                  <td>3.3m</td>
-                 <td>19.7%</td>
-              </tr>
-               <tr>
-                  <td class="d-flex table-namedetails">
-                      <div class="img-thumb-circle">
-                          <img src="images/Ellipse1.png" alt="img">
-                      </div>
-                      <div>
-                      <span class="username">@username</span>
-                      <span class="profileDes">Profile description</span>
-                     </div>
-                  </td>
-                  <td>USA</td>
-                  <td>62.6m</td>
-                  <td>18.5m</td>
-                  <td>3.3m</td>
-                 <td>19.7%</td>
-              </tr>
-               <tr>
-                 <td class="d-flex table-namedetails">
-                      <div class="img-thumb-circle">
-                          <img src="images/Ellipse1.png" alt="img">
-                      </div>
-                      <div>
-                      <span class="username">@username</span>
-                      <span class="profileDes">Profile description</span>
-                     </div>
-                  </td>
-                  <td>USA</td>
-                  <td>62.6m</td>
-                  <td>18.5m</td>
-                  <td>3.3m</td>
-                 <td>19.7%</td>
-              </tr>
-               <tr>
-                 <td class="d-flex table-namedetails">
-                      <div class="img-thumb-circle">
-                          <img src="images/Ellipse1.png" alt="img">
-                      </div>
-                      <div>
-                      <span class="username">@username</span>
-                      <span class="profileDes">Profile description</span>
-                     </div>
-                  </td>
-                  <td>USA</td>
-                  <td>62.6m</td>
-                  <td>18.5m</td>
-                  <td>3.3m</td>
-                 <td>19.7%</td>
-              </tr>
+
+            <tr>
+              <td class="d-flex table-namedetails">
+                <div class="img-thumb-circle">
+                  <img src="images/Ellipse1.png" alt="img">
+                </div>
+                <div>
+                  <span class="username">@username</span>
+                  <span class="profileDes">Profile description</span>
+                </div>
+              </td>
+              <td>USA</td>
+              <td>62.6m</td>
+              <td>18.5m</td>
+              <td>3.3m</td>
+              <td>19.7%</td>
+            </tr>
+            <tr>
+              <td class="d-flex table-namedetails">
+                <div class="img-thumb-circle">
+                  <img src="images/Ellipse1.png" alt="img">
+                </div>
+                <div>
+                  <span class="username">@username</span>
+                  <span class="profileDes">Profile description</span>
+                </div>
+              </td>
+              <td>USA</td>
+              <td>62.6m</td>
+              <td>18.5m</td>
+              <td>3.3m</td>
+              <td>19.7%</td>
+            </tr>
+            <tr>
+              <td class="d-flex table-namedetails">
+                <div class="img-thumb-circle">
+                  <img src="images/Ellipse1.png" alt="img">
+                </div>
+                <div>
+                  <span class="username">@username</span>
+                  <span class="profileDes">Profile description</span>
+                </div>
+              </td>
+              <td>USA</td>
+              <td>62.6m</td>
+              <td>18.5m</td>
+              <td>3.3m</td>
+              <td>19.7%</td>
+            </tr>
+            <tr>
+              <td class="d-flex table-namedetails">
+                <div class="img-thumb-circle">
+                  <img src="images/Ellipse1.png" alt="img">
+                </div>
+                <div>
+                  <span class="username">@username</span>
+                  <span class="profileDes">Profile description</span>
+                </div>
+              </td>
+              <td>USA</td>
+              <td>62.6m</td>
+              <td>18.5m</td>
+              <td>3.3m</td>
+              <td>19.7%</td>
+            </tr>
+            <tr>
+              <td class="d-flex table-namedetails">
+                <div class="img-thumb-circle">
+                  <img src="images/Ellipse1.png" alt="img">
+                </div>
+                <div>
+                  <span class="username">@username</span>
+                  <span class="profileDes">Profile description</span>
+                </div>
+              </td>
+              <td>USA</td>
+              <td>62.6m</td>
+              <td>18.5m</td>
+              <td>3.3m</td>
+              <td>19.7%</td>
+            </tr>
+            <tr>
+              <td class="d-flex table-namedetails">
+                <div class="img-thumb-circle">
+                  <img src="images/Ellipse1.png" alt="img">
+                </div>
+                <div>
+                  <span class="username">@username</span>
+                  <span class="profileDes">Profile description</span>
+                </div>
+              </td>
+              <td>USA</td>
+              <td>62.6m</td>
+              <td>18.5m</td>
+              <td>3.3m</td>
+              <td>19.7%</td>
+            </tr>
+            <tr>
+              <td class="d-flex table-namedetails">
+                <div class="img-thumb-circle">
+                  <img src="images/Ellipse1.png" alt="img">
+                </div>
+                <div>
+                  <span class="username">@username</span>
+                  <span class="profileDes">Profile description</span>
+                </div>
+              </td>
+              <td>USA</td>
+              <td>62.6m</td>
+              <td>18.5m</td>
+              <td>3.3m</td>
+              <td>19.7%</td>
+            </tr>
           </tbody>
-       </table>
-  </div>
-    <div class="trust-logo">
-         <p>Trusted by some of the world’s most respected brands and agencies</p>
+        </table>
+      </div>
+      <div class="trust-logo">
+        <p>Trusted by some of the world’s most respected brands and agencies</p>
         <ul>
-           <li><img src="images/trustlogo2.png"></li>
-            <li><img src="images/trustlogo2.png"></li>
-            <li><img src="images/trustlogo2.png"></li>
+          <li><img src="images/benefits.svg"></li>
+            <li><img src="images/influ.svg"></li>
+            <li><img src="images/gta.svg"></li>
         </ul>
+      </div>
+      <div class="Tablebg"></div>
     </div>
-    <div class="Tablebg"></div>
-     </div>
   </section>
- <!--DivFluenceGridWork start-->
+  <!--DivFluenceGridWork start-->
   <section class="DivFluenceGridWork">
-      <div class="container">
-        <div class="section_title">
-            <h2>How Influence Grid Works</h2>
-        </div>
-          <div class="row GridWorklist">
-              <div class="col-md-4">
-                <img src="images/tiktokusercardimg.svg" alt="">
-                <div class="grid-content">
-                  <p>1.  Search for Tiktok Influencers using our advanced filters and an unlimited number of searches.</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <img src="images/browserimg.svg" alt="">
-                <div class="grid-content">
-                  <p>2.  Create & Save Custom Tiktok influencer exportable lists.</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                 <img src="images/bulkexportimg.svg" alt="">
-                 <div class="grid-content">
-                    <p>3.  Bulk Export Thousands of your influencer search results to a CSV file for use in your CRM.</p>
-                 </div>
-              </div>
-          </div>
+    <div class="container">
+      <div class="section_title">
+        <h2>How Influence Grid Works</h2>
       </div>
-  </section>
-    <!--DivFluenceGridWork end-->
-   
- <!--DivAdvancedSearchSolution start-->
-    <section class="DivAdvancedSearchSolution">
-         <div class="section_title">
-                <h2>Find TikTok Influencers Faster With Our Advanced Search Solutions</h2>
-            </div>
-        <div class="container">
-          <div class="DivEmailfinder">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-md-6">
-                 
-                  <div class="finder-slider">
-                    <!--card start-->
-                    <div>
-                      <div class="card">
-                        <img class="card-img-top" src="images/profileimg1.png" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">@zachmad</h5>
-                           
-                            <a href="#" class="btn">
-                              <img src="images/ic_outline-mail-outline.svg" alt="">
-                            </a>
-                          </div>
-                      </div>
-                      <button class="btn btn-green">Email copied to clipboard!</button>
-                    </div>
-                    <!--card end-->
-                    <!--card start-->
-                    <div>
-                      <div class="card">
-                        <img class="card-img-top" src="images/profileimg3.png" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">@ritamar</h5>
-                            
-                            <a href="#" class="btn">
-                              <img src="images/ic_outline-mail-outline.svg" alt="">
-                            </a>
-                          </div>
-                      </div>
-                      <button class="btn btn-green">Email copied to clipboard!</button>
-                     </div>
-                    <!--card end-->
-                    <!--card start-->
-                    <div>
-                      <div class="card">
-                        <img class="card-img-top" src="images/profileimg2.png" alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">@zachmad</h5>
-                          
-                          <a href="#" class="btn">
-                            <img src="images/ic_outline-mail-outline.svg" alt="">
-                          </a>
-                        </div>
-                      </div>
-                      <button class="btn btn-green">Email copied to clipboard!</button>
-                    </div>
-                    <!--card end-->
-                    <!--card start-->
-                    <div>
-                      <div class="card">
-                          <img class="card-img-top" src="images/profileimg3.png" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">@zachmad</h5>
-                          
-                            <a href="#" class="btn">
-                              <img src="images/ic_outline-mail-outline.svg" alt="">
-                            </a>
-                          </div>
-                      </div>
-                      <button class="btn btn-green">Email copied to clipboard!</button>
-                    </div>
-                    <!--card end-->
-                  </div>
-                </div>
-                <div class="col-md-5 emailfindertext">
-                    <h2>Tiktok Email Finder</h2>
-                    <p>We've collected and verified emails for thousands of emails to build our TikTok email finder. It'll make your influencer outreach easier than ever.</p>
-                </div>
-            </div>
+      <div class="row GridWorklist">
+        <div class="col-md-4">
+          <img src="images/tiktokusercardimg.svg" alt="">
+          <div class="grid-content">
+            <p>1. Search for Tiktok Influencers using our advanced filters and an unlimited number of searches.</p>
+          </div>
         </div>
+        <div class="col-md-4">
+          <img src="images/browserimg.svg" alt="">
+          <div class="grid-content">
+            <p>2. Create & Save Custom Tiktok influencer exportable lists.</p>
+          </div>
         </div>
-    </section>
-   <!--DivAdvancedSearchSolution end-->
-        <!--DivAdvancedSearchSolution start-->
-<section class="DivinfluencersLocation">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5 locationContent">
-        <div class="locationLeft">
-           <h2>Find Tiktok Influencers by Location</h2>
-        <p>Every TikTok influencer in our database is categorized by country, so you can easily search TikTok accounts based on what country they are in.</p>
+        <div class="col-md-4">
+          <img src="images/bulkexportimg.svg" alt="">
+          <div class="grid-content">
+            <p>3. Bulk Export Thousands of your influencer search results to a CSV file for use in your CRM.</p>
+          </div>
         </div>
-       
       </div>
-      <div class="col-md-7">
-        <div class="location-map">
-          <div class="Browser-img">
-          <div clas="Browserinput">
-            <img src="images/Browser.svg" alt="">
-          </div>
-         <div>
-            <div class="SearchDefault">
-              <select>
-                <option>1</option>
-                <option>1</option>
-                <option>1</option>
-                <option>1</option>
-              </select>
-              <button class="btn btn-green">show influence</button>
-            </div>
-            <div class="text-result">
-              <p>We found 12.945.982 results in your location!</p>
-              <img src="images/searchLocationresultimg.svg">
-            </div>
-          </div>
-        </div>
-         <div class="Divlocator">
-            <div class="locator1">
-              <img src="images/location2.png" alt="">
-            </div>
-            <div class="locator2">
-              <img src="images/location2.png" alt="">
-            </div>
-             <div class="locator3">
-              <img src="images/location2.png" alt="">
-            </div>
-             <div class="locator4">
-              <img src="images/location2.png" alt="">
-            </div>
-          </div>
-          </div>
-        </div>
-      
     </div>
-  </div>
-</section>
-  <!--DivAdvancedSearchSolution end-->
-   <!--start-->
-    <section class="DivTikinNiche">
-      <div class="container">
+  </section>
+  <!--DivFluenceGridWork end-->
+
+  <!--DivAdvancedSearchSolution start-->
+  <section class="DivAdvancedSearchSolution">
+    <div class="section_title">
+      <h2>Find TikTok Influencers Faster With Our Advanced Search Solutions</h2>
+    </div>
+    <div class="container">
+      <div class="DivEmailfinder">
         <div class="row justify-content-between align-items-center">
           <div class="col-md-6">
-             
-              <div class="backimg">
-                <div>
-                 <img src="images/nicheimg.png" alt="">
-                  <div>
-                     <div class="UsernameInput">
-                <form>
-                 <input type="type" value="" placeholder="Username">
-                 <button class="btn btn-green">Show Influencers</button>
-                </form>
-                 </div>
+
+            <div class="finder-slider">
+              <!--card start-->
+              <div>
+                <div class="card">
+                  <img class="card-img-top" src="images/profileimg1.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">@zachmad</h5>
+
+                    <a href="#" class="btn">
+                      <img src="images/ic_outline-mail-outline.svg" alt="">
+                    </a>
                   </div>
                 </div>
-                
+                <button class="btn btn-green">Email copied to clipboard!</button>
               </div>
-         </div>
-            
-            
-          <div class="col-md-5 d-flex">
-            <div class="section-title">
-              <h2>Find Tiktok Influencers in Your Niche</h2>
-              <p>Quickly find influencers in your niche. Search any category like fitness, beauty and gaming. Influence Grid is the first TikTok search engine that has this!</p>
+              <!--card end-->
+              <!--card start-->
+              <div>
+                <div class="card">
+                  <img class="card-img-top" src="images/profileimg3.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">@ritamar</h5>
+
+                    <a href="#" class="btn">
+                      <img src="images/ic_outline-mail-outline.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <button class="btn btn-green">Email copied to clipboard!</button>
+              </div>
+              <!--card end-->
+              <!--card start-->
+              <div>
+                <div class="card">
+                  <img class="card-img-top" src="images/profileimg2.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">@zachmad</h5>
+
+                    <a href="#" class="btn">
+                      <img src="images/ic_outline-mail-outline.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <button class="btn btn-green">Email copied to clipboard!</button>
+              </div>
+              <!--card end-->
+              <!--card start-->
+              <div>
+                <div class="card">
+                  <img class="card-img-top" src="images/profileimg3.png" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">@zachmad</h5>
+
+                    <a href="#" class="btn">
+                      <img src="images/ic_outline-mail-outline.svg" alt="">
+                    </a>
+                  </div>
+                </div>
+                <button class="btn btn-green">Email copied to clipboard!</button>
+              </div>
+              <!--card end-->
             </div>
           </div>
-        </div>
-       
-      </div>
-    </section>
-    <!--end-->
-<!--DivTikTokUserSearch start-->
-<section class="DivTikTokUserSearch">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <div class="section-title">
-          <h2>Tiktok Username Search</h2>
-          <p>Use Influence Grid's TikTok username search to find TikTok influencers by name. Quickly find the influencers you’re already working with or want to work with.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-6 Usersearchbg">
-        <div class="Bckground-box">
-         <img src="images/usersearch.png" alt="">
-        </div>
-        <div class="UsernameInput">
-          <form>
-           <input type="type" value="" placeholder="Username">
-           <button class="btn btn-green">Show Influencers</button>
-          </form>
+          <div class="col-md-5 emailfindertext">
+            <h2>Tiktok Email Finder</h2>
+            <p>We've collected and verified emails for thousands of emails to build our TikTok email finder. It'll make
+              your influencer outreach easier than ever.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!--DivTikTokUserSearch end-->
+  </section>
+  <!--DivAdvancedSearchSolution end-->
+  <!--DivAdvancedSearchSolution start-->
+  <section class="DivinfluencersLocation">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 locationContent">
+          <div class="locationLeft">
+            <h2>Find Tiktok Influencers by Location</h2>
+            <p>Every TikTok influencer in our database is categorized by country, so you can easily search TikTok
+              accounts based on what country they are in.</p>
+          </div>
+
+        </div>
+        <div class="col-md-7">
+          <div class="location-map">
+            <div class="Browser-img">
+              <div clas="Browserinput">
+                <img src="images/Browser.svg" alt="">
+              </div>
+              <div>
+                <div class="SearchDefault">
+                  <select>
+                    <option>1</option>
+                    <option>1</option>
+                    <option>1</option>
+                    <option>1</option>
+                  </select>
+                  <button class="btn btn-green">show influence</button>
+                </div>
+                <div class="text-result">
+                  <p>We found 12.945.982 results in your location!</p>
+                  <img src="images/searchLocationresultimg.svg">
+                </div>
+              </div>
+            </div>
+            <div class="Divlocator">
+              <div class="locator1">
+                <img src="images/location2.png" alt="">
+              </div>
+              <div class="locator2">
+                <img src="images/location2.png" alt="">
+              </div>
+              <div class="locator3">
+                <img src="images/location2.png" alt="">
+              </div>
+              <div class="locator4">
+                <img src="images/location2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--DivAdvancedSearchSolution end-->
+  <!--start-->
+  <section class="DivTikinNiche">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-md-6">
+
+          <div class="backimg">
+            <div>
+              <img src="images/nicheimg.png" alt="">
+              <div>
+                <div class="UsernameInput">
+                  <form>
+                    <input type="type" value="" placeholder="Username">
+                    <button class="btn btn-green">Show Influencers</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="col-md-5 d-flex">
+          <div class="section-title">
+            <h2>Find Tiktok Influencers in Your Niche</h2>
+            <p>Quickly find influencers in your niche. Search any category like fitness, beauty and gaming. Influence
+              Grid is the first TikTok search engine that has this!</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--end-->
+  <!--DivTikTokUserSearch start-->
+  <section class="DivTikTokUserSearch">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="section-title">
+            <h2>Tiktok Username Search</h2>
+            <p>Use Influence Grid's TikTok username search to find TikTok influencers by name. Quickly find the
+              influencers you’re already working with or want to work with.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 Usersearchbg">
+          <div class="Bckground-box">
+            <img src="images/usersearch.png" alt="">
+          </div>
+          <div class="UsernameInput">
+            <form>
+              <input type="type" value="" placeholder="Username">
+              <button class="btn btn-green">Show Influencers</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--DivTikTokUserSearch end-->
   <!--DivDetailsTikTokAnalytics start-->
   <section class="DivDetailsTikTokAnalytics">
     <div class="container">
       <div class="section-title">
         <h2>Detailed TikTok Analytics</h2>
-        <p>Utilize metrics like posts per day, engagement rate, and average video views. 
-You can also view 20 recent videos for every influencer profile, discover connected Instagram and Youtube profiles, and check if they’re verified
-</p>
+        <p>Utilize metrics like posts per day, engagement rate, and average video views.
+          You can also view 20 recent videos for every influencer profile, discover connected Instagram and Youtube
+          profiles, and check if they’re verified
+        </p>
       </div>
-      <div class="DivTKtokAnalyticgridBox">
-         <div class="DivAnalyticgridGridItems">
-            <div class="grid-img">
-              <img src="images/Followers.svg" alt="">
-            </div>
-            <p>Followers</p>
+      <ul class="DivTKtokAnalyticgridBox">
+        <li class="DivAnalyticgridGridItems">
+          <div class="grid-img">
+            <img src="images/Followers.svg" alt="">
           </div>
-          <div class="DivAnalyticgridGridItems">
-            <div class="grid-img">
-               <img src="images/Views.svg" alt="">
-            </div>
-            <p>Views/Vid</p>
+          <p>Followers</p>
+        </li>
+        <li class="DivAnalyticgridGridItems">
+          <div class="grid-img">
+            <img src="images/Views.svg" alt="">
           </div>
-          <div class="DivAnalyticgridGridItems">
-            <div class="grid-img">
-               <img src="images/likes.svg" alt="">
-            </div>
-            <p>Likes/Vid</p>
+          <p>Views/Vid</p>
+        </li>
+        <li class="DivAnalyticgridGridItems">
+          <div class="grid-img">
+            <img src="images/likes.svg" alt="">
           </div>
-          <div class="DivAnalyticgridGridItems">
-            <div class="grid-img">
-              <img src="images/Views1.svg" alt="">
-            </div>
-            <p>Engagement</p>
+          <p>Likes/Vid</p>
+        </li>
+        <li class="DivAnalyticgridGridItems">
+          <div class="grid-img">
+            <img src="images/Views1.svg" alt="">
           </div>
-        
-      </div>
-       <button class="btn btn-green m-auto">Start Your Free Trial</button>
+          <p>Engagement</p>
+        </li>
+
+      </ul>
+      <button class="btn btn-green m-auto">Start Your Free Trial</button>
     </div>
   </section>
-   <!--DivDetailsTikTokAnalytics end-->
+  <!--DivDetailsTikTokAnalytics end-->
   <!--footer start-->
   <footer>
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-md-3">
           <img src="images/logo.svg" alt="img">
-       </div>
-      <div class="col-md-2">
-        <ul>
-          <li><a href="#">How To Work</a></li>
-           <li><a href="#">Faq</a></li>
-           <li><a href="#">Pricing</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3">
-        <ul>
-          <li><a href="#">Find TikTok Influencers by Location</a></li>
-          <li><a href="#">Find TikTok Influencers in your Niche</a></li>
-          <li><a href="#">TikTok Username Search</a></li>
-          <li><a href="#">TikTok Influencer List</a></li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <h6>Get advanced Instagram growth strategies </h6>
-        <form>
-          <input type="text" value="" placeholder="Your email">
-          <button class="btn btn-green">Subscribe</button>
-        </form>
-        <div class="social-Link">
-           <p>Follow us on social media:</p>
-        <ul>
-          <li><a href="#"><img src="images/Instagram_logo_2016.svg" alt=""></a></li>
-           <li><a href="#"><img src="images/facebook.svg" alt=""></a></li>
-        </ul>
         </div>
-       
+        <div class="col-md-2">
+          <ul>
+            <li><a href="#">How To Work</a></li>
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul>
+            <li><a href="#">Find TikTok Influencers by Location</a></li>
+            <li><a href="#">Find TikTok Influencers in your Niche</a></li>
+            <li><a href="#">TikTok Username Search</a></li>
+            <li><a href="#">TikTok Influencer List</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>Get advanced Instagram growth strategies </h6>
+          <form>
+            <input type="text" value="" placeholder="Your email">
+            <button class="btn btn-green">Subscribe</button>
+          </form>
+          <div class="social-Link">
+            <p>Follow us on social media:</p>
+            <ul>
+              <li><a href="#"><img src="images/Instagram_logo_2016.svg" alt=""></a></li>
+              <li><a href="#"><img src="images/facebook.svg" alt=""></a></li>
+            </ul>
+          </div>
+
+        </div>
       </div>
-      </div>
-      
+
     </div>
   </footer>
   <!--footer end-->
   <script src="js/jquery-2.2.0.min.js" type="text/javascript"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-   <script src="js/slick.js" type="text/javascript"></script>
+  <script src="js/slick.js" type="text/javascript"></script>
   <script src=" js/jquery.dataTables.min.js"></script>
 
-<script>
-
-
-    $(document).ready(function(){
-  $('.finder-slider').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay:false,
-    autoplaySpeed: 3000,
-    centerMode: true,
-    centerPadding: '0px',
-    arrows: false,
-    dots: false,
-    pauseOnHover: false,
-    responsive: [{
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 4
-      }
-    }, {
-      breakpoint: 520,
-      settings: {
-        slidesToShow: 2
-      }
-    }]
-  });
-});
-    $(document).ready(function() {
-    var table = $('#example').DataTable( {
+  <script>
+    $(document).ready(function () {
+      $('.finder-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        centerMode: true,
+        centerPadding: '0px',
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4
+          }
+        }, {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 2
+          }
+        }]
+      });
+    });
+    $(document).ready(function () {
+      var table = $('#example').DataTable({
         fixedHeader: true
-    } );
-} );
-</script>
+      });
+    });
+  </script>
 </body>
+
 </html>
