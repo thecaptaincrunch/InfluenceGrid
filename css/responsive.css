@@ -112,15 +112,9 @@
 		margin-left: 0;
 	}
 
-	.DivTikTokUserSearch .UsernameInput {
-		left: 0.8rem;
-	}
-
 	.DivTikTokUserSearch::before {
 		height: 169px;
 	}
-
-	
 
 	.DivTKtokAnalyticgridBox {
 		padding: 0 0 5.33rem 0;
@@ -133,28 +127,115 @@
 		right: -9px;
 	} */
 
+	.DivTikTokUserSearch input, .DivTikinNiche input {
+		height: 53px;
+		width: calc(100% - 200px);
+		padding: 1rem 0.86rem 0.86rem 0.86rem;
+		margin-right: 0.86rem;
+	}
+
 }
 
 @media only screen and (max-width:1200px) {
-
-	/*header*/
-	.header-container {
-		max-width: 1140px;
+	.header-container.container {
+		padding-left: 15px;
+		padding-right: 15px;
 	}
-
-	.container,
-	.banner-container {
-		max-width: 1140px;
+	
+	.navbar-brand img {
+		width: 181px;
 	}
+}
 
+@media only screen and (max-width:1199px) {
+	/* header */
 	.header-container .navbar-light .navbar-nav .nav-link {
 		padding: 0 2.66rem;
+	}
+	form.headerSearchform {
+		width: 41%;
+		margin: 0 2.1rem 0 1.93rem;
+	}
+	.header-container form.headerSearchform input {
+		font-size: 0.77rem;
+		width: calc(100% - 45px);
+		margin: 0 !important;
+	}
+	.Divbanner {
+		margin-top: 3.33rem;
+	}
+	.welcome-banner {
+		width: 66.5%;
+	}
+	.welcome-banner h1 {
+		font-size: 2rem;
+		margin-bottom: 0.38rem;
+		margin-top: 2.2rem;
+	}
+	.welcome-banner p {
+		font-size: 1.13rem;
+	}
+	.welcome-banner .btn {
+		margin: 1.53rem auto 3.13rem auto;
+		padding: 1rem 1.2rem;
+	}
+	.mid-search form.headerSearchform .form-control {
+		display: inline-block;
+		width: calc(100% - 45px);
+	}
+	.banner-container {
+		padding-bottom: 1.13rem;
+	}
+	.DivTiktokInfluenceTable {
+		padding-top: 2.06rem;
+	}
+	.DivFluenceGridWork {
+		padding: 3.53rem 0 4.4rem 0;
+	}
+	.GridWorklist {
+		margin-top: 3.52rem;
+	}
+	h2 {
+		font-size: 1.73rem;
+		line-height: 2.06rem;
+	}
+	.DivAdvancedSearchSolution {
+		margin-bottom: 5.93rem;
+	}
+	.DivFluenceGridWork .grid-content {
+		margin-top: 1.69rem;
+	}
+	.DivEmailfinder {
+		margin-top: 5.53rem;
+	}
+	.DivTikinNiche {
+		padding-top: 6.2rem;
+	}
+	.DivTikTokUserSearch {
+		padding-bottom: 8.2rem;
+	}
+	.DivDetailsTikTokAnalytics {
+		padding: 3.22rem;
+	}
+	.DivDetailsTikTokAnalytics .section-title p {
+		width: 80%;
+	}
+	.DivTKtokAnalyticgridBox {
+		padding: 0 0 3.87rem 0;
+	}
+	footer {
+		padding-top: 2.92rem;
+		padding-bottom: 2.36rem;
 	}
 }
 
 @media only screen and (max-width:991px) {}
 
-@media only screen and (max-width:767px) {}
+@media only screen and (max-width:767px) {
+	.DivAnalyticgridGridItems {
+		width: 48%;
+	}
+}
 
 @media only screen and (max-width:567px) {
 	.header-container {

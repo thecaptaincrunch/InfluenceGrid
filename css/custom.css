@@ -77,6 +77,9 @@ a:hover {
 ::focus {
     outline: 0;
 }
+textarea:focus, input:focus{
+    outline: none;
+}
 .btn.btn-green{
     transtion:background 0.3s ease;
 }
@@ -98,7 +101,7 @@ a:hover {
 }
 
 header {
-    padding: 1.25rem 0;
+    padding: 1.25rem 0 0rem 1.25rem;
 }
 
 .header-container.container {
@@ -141,7 +144,7 @@ form.headerSearchform input,
     align-items: center;
     color: #C0CDD3;
     width: 85%;
-    height: calc(1.5em + .75rem);
+    height: calc(1.5em + .7rem);
 }
 
 
@@ -156,7 +159,7 @@ form.headerSearchform input,
 }
 
 .btn.btn-green {
-    padding: 0.5rem 1.18rem;
+    padding: 0.75rem 0.8rem;
     left: 74.3rem;
     top: 1.25rem;
     /* Primary / green */
@@ -262,12 +265,7 @@ form.headerSearchform input,
 
 }
 
-#example_length,
-#example_filter,
-#example_info,
-#example_paginate {
-    display: none;
-}
+
 
 .DivTiktokInfluenceTable table th,
 .DivTiktokInfluenceTable td {
@@ -279,9 +277,6 @@ form.headerSearchform input,
     font-weight: normal;
 }
 
-.DivTiktokInfluenceTable table {
-    width: 1130px;
-}
 
 .DivTiktokInfluenceTable table th:first-child {
     width: 329px !important;
@@ -331,7 +326,7 @@ form.headerSearchform input,
     margin-right: 0.43rem;
 }
 
-.DivTiktokInfluenceTable #example_wrapper::after {
+.DivTiktokInfluenceTable #example::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -341,15 +336,16 @@ form.headerSearchform input,
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 60.94%);
 }
 
-#example_wrapper {
+.table-responsive {
     background: #FFFFFF;
     /*box-shadow: 0px 5px 25px rgba(42, 52, 61, 0.08);*/
     border-radius: 0.37rem;
     padding: 1.81rem 2.56rem;
+    border-radius: 6px;
 }
 
 .trust-logo {
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -367,7 +363,7 @@ form.headerSearchform input,
     font-size: 1.12rem;
     line-height: 1.5rem;
     color: #526C79;
-    margin:0rem;
+    margin:0 0 0.6rem 0;
     font-family: 'proxima_novabold';
 }
 
@@ -386,11 +382,11 @@ form.headerSearchform input,
 /*DivFluenceGridWork*/
 
 .DivFluenceGridWork {
-    padding: 4.93rem 0 6.06rem 0;
+    padding: 6.5rem 0 8.8rem 0;
 }
 
 .GridWorklist {
-    margin-top: 4.81rem;
+    margin-top: 4rem;
 }
 
 .DivFluenceGridWork .grid-content {
@@ -398,7 +394,8 @@ form.headerSearchform input,
 }
 
 .DivFluenceGridWork img {
-    min-height: 279px;
+    max-height: 305px;
+    width: 100%;
 }
 
 .DivFluenceGridWork .grid-content p {
@@ -421,7 +418,7 @@ h2 {
 
 /*DivEmailfinder*/
 .DivEmailfinder {
-    margin-top: 8.12rem;
+    margin-top: 7rem;
 }
 
 .emailfindertext {
@@ -482,7 +479,7 @@ h2 {
     width: 236px;
     position: absolute;
     left: -30px;
-    top: 13rem;
+    top: 12rem;
 }
 
 .slick-list {
@@ -521,6 +518,8 @@ h2 {
 .slick-slide.slick-current.slick-active.slick-center>div {
     box-shadow: 2px 5px 25px rgba(42, 52, 61, 0.15);
 }
+
+
 
 /**/
 .locationLeft {
@@ -656,7 +655,7 @@ h2 {
     box-sizing: border-box;
     border-radius: 6px;
     height: 56px;
-    flex-grow: 1;
+    width: calc(100% - 200px);
     padding: 1rem 0.93rem 0.93rem 0.93rem;
     margin-right: 0.93rem;
 }
@@ -665,7 +664,7 @@ h2 {
 .DivTikinNiche form {
     display: flex;
     justify-content: center;
-    width:100%;
+    width: 100%;
 }
 
 .DivTikTokUserSearch .section-title p {
@@ -674,8 +673,9 @@ h2 {
 
 .DivTikTokUserSearch {
     position: relative;
-    padding-bottom: 12.87rem;
-    padding-top: 8.12rem;
+    padding-bottom: 9rem;
+    padding-top:7.5rem;
+    
 }
 
 .DivTikTokUserSearch::before {
@@ -693,30 +693,16 @@ h2 {
 
 /*.DivTikTokUserSearch .Browser-img
 
-.Bckground-green-box{
-    position: relative;
-}
-.Bckground-green-box::after {
-    position: absolute;
-    width: 458px;
-    height: 343px;
-    left: 0;
-    top: 0;
-    background: #4ED687;
-    border-radius: 25px;
-    transform: rotate(16.6deg);
-    content: '';
-    z-index: -1;
-}*/
+
 /*DivDetailsTikTokAnalytics*/
 .DivDetailsTikTokAnalytics {
     /*position: relative;*/
     background: #f6faff;
-    padding: 4.68rem;
+    padding:1.5rem;
 }
 
 .DivDetailsTikTokAnalytics .section-title {
-    padding: 1.87rem 0 0 0;
+    padding: 0;
     text-align: center;
 }
 
@@ -727,6 +713,7 @@ h2 {
 
 .DivTKtokAnalyticgridBox {
     display: flex;
+    flex-wrap: wrap;
 justify-content: space-evenly;
 padding:0 0 5.33rem 0;
 }
@@ -741,8 +728,8 @@ padding:0 0 5.33rem 0;
 
 .DivTKtokAnalyticgridBox .grid-img {
     background: #4ED687;
-    width: 6rem;
-    height:6rem;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -797,10 +784,12 @@ footer h6 {
 }
 
 footer form {
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer form input {
+    width: calc(100% - 116px);
     background: #FFFFFF;
     border: 1px solid #C0CDD3;
     box-sizing: border-box;
@@ -840,9 +829,8 @@ footer form .btn {
 
 .DivTikTokUserSearch .UsernameInput {
     position: absolute;
-    text-align: 5rem;
     top: 11.18rem;
-    left: 1.5rem;
+    left: 0;
     width: 100%;
 }
 
@@ -859,7 +847,7 @@ footer form .btn {
     left: -3.75rem;
     display: inline-flex;
 }
-
+.DivinfluencersLocation{padding-bottom:11.73rem}
 .Bckground-box img {
     width: 100%;
     max-width: 100%;
