@@ -807,7 +807,9 @@ footer form .btn {
     padding: 1rem 1.25rem;
     margin-left: 0.93rem;
 }
-
+footer form .btn.btn-green{
+    padding:0 1rem;
+}
 .social-Link ul {
     display: flex;
     margin-top: 1.5rem;
